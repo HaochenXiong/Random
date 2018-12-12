@@ -1,0 +1,229 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+
+.App {
+  text-align: center;
+  height: 667px;
+  width: 375px;
+  margin:0 auto;
+}
+
+.icon {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.title{
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: 'Comfortaa','Arial';
+  font-weight: bold;
+}
+
+.card{
+  width: 80%;
+  margin:0 auto;
+  font-family: 'Comfortaa','Raleway', sans-serif;
+  border-radius: 20px;
+}
+
+.card2{
+  margin:0 auto;
+  font-family: 'Comfortaa','Raleway', sans-serif;
+  border-radius: 20px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.resultTitle{
+  color:#eb2f96;
+  margin-top: -5px;
+  font-weight: bold;
+}
+
+.pink{
+  color:#eb2f96;
+}
+
+
+.ant-input-lg {
+  font-family: 'Comfortaa';
+}
+
+.ant-cascader-menu-item{
+  font-family: 'Comfortaa';
+}
+
+.button{
+  border-radius: 20px;
+}
+
+.ant-list-item-content-single {
+  font-family: 'Comfortaa';
+}
+
+.ant-input-number-lg input{
+  font-family: 'Comfortaa';
+}
+
+.ant-cascader-input.ant-input {
+  font-family: 'Comfortaa';
+}
+
+
+.ant-btn:not([disabled]):hover {
+  font-family: 'Comfortaa';
+}
+
+.ant-btn {
+  font-family: 'Comfortaa';
+}
+
+.arrow{
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.names{
+  float: left;
+}
+
+
+
+.prize {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  padding:5%;
+}
+
+
+.begin__btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  border: 3px solid #C1DEEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+}
+
+.row__item {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float:left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.row__item-active {
+  background-color: rgb(255, 163, 161);
+}
+
+.student-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px dashed #C1DEEB;
+}
+.student-item {
+  margin-bottom: 8px;
+  border: 1px solid #C1DEEB;
+  color: #131815;
+  font-weight: 300;
+  padding: 8px 8px;
+}
+
+.groupRow{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+#todo {
+  width: 90%;
+  margin:0 auto;
+}
+
+
+button {
+  margin: 0 0 0 1rem;
+  padding: 0;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+}
+button:focus { outline: 0; }
+
+
+.input-group button, ul button { width: 10%; }
+
+.input-group {
+  display: flex;
+  width: 100%;
+}
+
+.task-input {
+  width: 90%;
+  padding: 0;
+  height: 2rem;
+  background-color: transparent;
+  border: 1px solid #C1DEEB;
+  outline: none;
+}
+
+.task-input::placeholder { 
+  color: #808B96;
+  font-size: 14px;
+}
+
+.task-ul {
+  margin: 1rem 0 0;
+  padding: 0;
+  border-bottom: 2px dashed #C1DEEB;  
+}
+
+.task-li {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+ul span, input { font-size: 1.0rem; }
+ul span, ul button { line-height: 2rem; }
+ul span { 
+  width: 90%;
+  word-break: break-word;
+  transition: color 0.3s ease;
+}
+ul button { visibility: hidden; }
+ul li:hover button { visibility: visible; }
+
+.item-completed { 
+  text-decoration: line-through; 
+}
+
+.inputBox{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 245px;
+  text-align: center;
+}
+
