@@ -13,7 +13,7 @@ class ResultList extends React.Component {
             items.push(
             <li className="student-item">
                 {this.props.dataSource.results[i]} 
-                <a href={this.link(i)} className='arrow' id={this.handleArrowId(i)} onClick={this.props.handleSelectedResult}> >> </a>
+                <a href={this.link(i)} className='arrow' id={this.handleArrowId(i)} onClick={(e)=>this.props.handleSelectedResult(e.target.id)}> >> </a>
             </li>
             );
     }

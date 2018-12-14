@@ -61,6 +61,16 @@ class App extends Component {
     };
   }
 
+  reFresh(){
+    document.location.reload();
+  }
+  
+  
+  setSelectedResult=(selectedResult)=>{
+    console.log(selectedResult[1]);
+    const selectedCard = document.getElementById(selectedResult[1]);
+    selectedCard.style.display = 'block';}
+  
   setDataOnDB(){
     let reference = database.ref("data");
     reference.set({});
@@ -226,10 +236,6 @@ class App extends Component {
       return bricks;
   }
 
-  setSelectedResult=(selectedResult)=>{
-    this.setState({selectedResult:selectedResult});
-    console.log(this.state.selectedResult);
-  }
 
   cardMaker = () => {
 
@@ -239,7 +245,7 @@ class App extends Component {
     for(let i=0; i<groups.length; i++){
       cards.push(
         <div>
-        <Card className='card' bordered={false} id={i}>
+        <Card className='switchCard' bordered={false} id={i}>
           <Todo/>
           <br/>
           <p className='pink' style={{fontSize: 14}}>
@@ -286,8 +292,7 @@ class App extends Component {
                   options={this.state.options}
                   size='large'/>
       <Fire handleSetData={this.setNewData}/>
-      <br></br>
-      <Button class='reset' onClick={this.setDataOnDB}>Reset</Button>
+      <Button className='reset' type= 'danger' onClick={this.setDataOnDB}>Refresh</Button>
       </Card>
       <br/>
 
@@ -309,17 +314,24 @@ class App extends Component {
       <br/>
 
       <div>
-        <Button type='primary' size='large' className="button"
+        <Button type='primary' ghost size='large' className="button"
         onClick={this.groupMaker}> 
         Make Groups
         </Button>
       </div>
-      <br/><br/>
-
-      <Card className='card' bordered={false}>
+      
+      <div>
+        <Button type='danger' ghost size='large' className="button"
+        onClick={this.reFresh}> 
+        Reset
+        </Button>
+      </div>
+      
+     <Card className='card' bordered={false}>
         <h1 className='resultTitle'>Results</h1>
         <div>
-          <ResultList dataSource={this.state} handleSelectedResult={this.setSelectedResult}/>
+          <ResultList dataSource={this.state} 
+          handleSelectedResult={this.setSelectedResult}/>
         </div> 
       </Card>
       <br/>
